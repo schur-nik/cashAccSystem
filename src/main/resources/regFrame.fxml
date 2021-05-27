@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="290.0" prefWidth="351.0" style="-fx-border-color: #2E3375; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.Controllers.RegController">
+    <children>
+        <TextField fx:id="loginRegField" layoutX="50.0" layoutY="74.0" maxHeight="35.0" maxWidth="250.0" minHeight="35.0" minWidth="250.0" onKeyReleased="#checkInput" prefHeight="35.0" prefWidth="250.0" promptText="LOGIN" style="-fx-border-radius: 5;" />
+        <PasswordField fx:id="passRegField" layoutX="50.0" layoutY="120.0" maxHeight="35.0" maxWidth="250.0" minHeight="35.0" minWidth="250.0" onKeyReleased="#checkInput" prefHeight="35.0" prefWidth="250.0" promptText="PASSWORD" style="-fx-border-radius: 5;" />
+        <Button fx:id="backButton" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="14.0" layoutY="226.0" maxHeight="43.0" minHeight="43.0" mnemonicParsing="false" onAction="#backButtonAction" prefHeight="43.0" prefWidth="102.0" style="-fx-background-color: #2E3375;" text="Назад" textFill="WHITE">
+            <font>
+                <Font name="Microsoft YaHei Bold" size="17.0" />
+            </font>
+            <effect>
+                <InnerShadow />
+            </effect>
+        </Button>
+        <Label layoutX="31.0" layoutY="22.0" text="Регистрация в системе" textAlignment="CENTER" textFill="#2e3375">
+            <font>
+                <Font name="Microsoft YaHei Bold" size="24.0" />
+            </font>
+            <effect>
+                <DropShadow blurType="GAUSSIAN" color="#ffffff80" height="26.68" offsetX="1.0" offsetY="1.0" radius="12.1025" spread="0.5" width="23.73" />
+            </effect>
+        </Label>
+      <Button fx:id="regButton" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="127.0" layoutY="226.0" maxHeight="43.0" minHeight="43.0" mnemonicParsing="false" onAction="#regButtonAction" prefHeight="43.0" prefWidth="210.0" style="-fx-background-color: #2E3375;" text="Зарегистрироваться" textFill="WHITE">
+         <font>
+            <Font name="Microsoft YaHei Bold" size="17.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <PasswordField fx:id="confirmPassRegField" layoutX="51.0" layoutY="169.0" maxHeight="35.0" maxWidth="250.0" minHeight="35.0" minWidth="250.0" onKeyReleased="#checkInput" prefHeight="35.0" prefWidth="250.0" promptText="CONFIRM PASSWORD" style="-fx-border-radius: 5;" />
+    </children>
+</AnchorPane>
